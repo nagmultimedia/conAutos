@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="../css/style.css" rel="stylesheet" />
+	<title>Automarket</title>
+</head>
+<body>
+
+	<header>
+		<div class="header2">
+			<div class="logo-header"><a href="../index.html"><img src="../img/logo.png" alt="logo-automarket" class="logo"/></a></div>
+			<div class="marca"><h1>Automarket</h1></div>
+		</div>
+		<div class="header3">
+			<div>
+				<ul><li><a href="#">Ofertas especiales</a></li>
+					<li><a href="#">Vehículos</a></li>
+					<li><a href="#">Postventa</a></li>
+					<li><a href="#">Contacto</a></li>
+					<li><a href="#">Registrarme</a></li>
+					<li><a href="#">Ingresar</a></li>
+				</ul>
+			</div>
+			<div id="contenedor-hamburguesita">
+				<nav>
+					<ul>
+						<li><a href="#">Ofertas especiales</a></li>
+						<li><a href="#">Vehículos</a></li>
+						<li><a href="#">Postventa</a></li>
+						<li><a href="#">Contacto</a></li>
+						<li><a href="#">Registrarme</a></li>
+						<li><a href="#">Ingresar</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		
+	</header>
+	
+	<div class="contenedor-body">
+		<div class="contenedor-formulario-contacto">
+
+			<h2>Contacto</h2>
+			
+			<form action="#.html" method="POST" autocomplete="off">
+			<label required for="name">Nombre y apellido</label><br />
+			<input id="name" class="input" name="name" type="text" value="" size="30"  required title="name"/><br />
+			<label required for="provincia">Provincia</label><br />
+			<input id="provincia" class="input" name="provincia" type="text" value="" size="50" required title="provincia" /><br />
+			<label required for="email">Email</label><br />
+			<input id="email" class="input" name="email" type="email" value="" size="40" required title="email" /><br />
+			<label required for="texto">Ingrese su mensaje: </label><br />
+			<textarea  name="texto" minlength="10" maxlength="250" size="250" required title="texto" ></textarea><br />
+
+			<button type="reset">Borrar</button>
+			<button onclick='validateForm(this.form);' type="submit">Enviar</button>
+			</form>
+
+
+		</div>
+	</div>
+
+	<div class="footer"><span>Dirección: Salguero 781 - Almagro, CABA &nbsp; | &nbsp; Teléfonos: 4951-4455 / 7788 &nbsp; | &nbsp; <a href="#">contactoautomarket@automarket.com.ar </a> </span></div>
+	<script src="js/validarForm.js"></script>
+</body>
+
+</html>
